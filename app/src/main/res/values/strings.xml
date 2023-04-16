@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">COVID-19 Pandemic Info</string>
+    <string name="open">Open navigation drawer</string>
+    <string name="close">Close navigation drawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="countrycode">
+
+        <item>Afghanistan</item>
+        <item>India</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowIndiaStateActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/relativeback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/livereports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/rubikreg"
+            android:text="Choose your state"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchstate"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_below="@id/livereports"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/back_search"
+            android:fontFamily="@font/rubikreg"
+            android:paddingLeft="5dp"
+            app:iconifiedByDefault="false"
+            app:queryHint="Search Country..."
+            app:searchIcon="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/worldimg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/searchstate"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/indiaicon" />
+
+        <TextView
+            android:id="@+id/worldwide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchstate"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@id/worldimg"
+            android:fontFamily="@font/rubikreg"
+            android:text="India"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_below="@id/worldimg"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/states"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="55dp"
+            tools:listitem="@layout/state_item" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

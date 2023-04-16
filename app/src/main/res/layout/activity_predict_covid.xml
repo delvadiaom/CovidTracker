@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PredictCovidActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolrelative"
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+
+            <TextView
+                android:id="@+id/countryname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Covid prediction"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="?selectableItemBackground"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/grey" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/helplinetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolrelative"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Just upload your chest xray image and get result within few seconds."
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/helplinetxt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/helplinetxt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Based on xray, it will show you wheather you are covid positive or negative person."
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/imgofxay"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/helplinetxt2"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/uploadimg" />
+
+            <TextView
+                android:id="@+id/uploadtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgofxay"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Upload your image here"
+                android:textColor="@color/myfav" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/uploadtxt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

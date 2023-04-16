@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="7dp"
+    android:background="@drawable/card_vaccine">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textcountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country : "
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:fontFamily="@font/rubikreg"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/countryname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CountryName"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_toEndOf="@id/textcountry"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:id="@+id/textvaccinated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textcountry"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/rubikreg"
+            android:text="Vaccinated : "
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/vaccinated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vaccinated"
+            android:textColor="@color/black"
+            android:fontFamily="@font/rubikreg"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@id/textvaccinated"
+            android:layout_below="@id/countryname"
+            android:layout_marginTop="9dp"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/percentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vaccinated"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/rubikreg"
+            android:text="Percentage"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/myfav"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="2dp"
+        android:layout_height="107dp"
+        android:background="@color/myfav"
+        android:layout_marginTop="4dp"/>
+
+</RelativeLayout>

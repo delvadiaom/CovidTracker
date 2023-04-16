@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash3Activity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/relativeback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/news_back">
+
+        <TextView
+            android:id="@+id/livereports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:padding="5dp"
+            android:text="Live Reports"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/allcountries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:layout_below="@id/livereports"
+            android:text="All Countries"
+            android:textSize="13sp"/>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchcountry"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_below="@id/allcountries"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/back_search"
+            android:fontFamily="@font/rubikreg"
+            android:paddingLeft="5dp"
+            app:iconifiedByDefault="false"
+            app:queryHint="Search Country..."
+            app:searchIcon="@drawable/search" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/countries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchcountry"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            tools:listitem="@layout/country_item" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

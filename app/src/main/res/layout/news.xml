@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/news_back">
+
+        <ImageView
+            android:id="@+id/newsimg"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <ImageView
+            android:id="@+id/like"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/like"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/newsimg"/>
+
+        <TextView
+            android:id="@+id/likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/like"
+            android:layout_below="@id/newsimg"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/shares"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newsimg"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/savethepost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newsimg"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/likes"
+            android:fontFamily="@font/rubikreg"
+            android:padding="10dp"
+            android:src="@drawable/save"
+            android:text="Save"
+            android:textColor="@color/myfav"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/headline"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/newsimg"
+            android:fontFamily="@font/rubikreg"
+            android:text="News Headlines"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="15sp"
+            android:layout_height="15sp"
+            android:layout_below="@id/newsimg"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="5dp"
+            android:layout_toStartOf="@id/latestupdates"
+            android:layout_toRightOf="@id/savethepost"
+            android:src="@drawable/ic_baseline_watch_later_24" />
+
+        <TextView
+            android:id="@+id/latestupdates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newsimg"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="15dp"
+            android:text="Latest Updates"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    android:paddingBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_search">
+
+        <TextView
+            android:id="@+id/datetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Date :" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/datetxt"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Date" />
+
+        <TextView
+            android:id="@+id/totalSamplesTestedtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sample Tested :"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsmedium"
+            android:layout_below="@id/datetxt"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/totalSamplesTested"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datetxt"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/totalSamplesTestedtxt"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Sample Tested" />
+
+        <TextView
+            android:id="@+id/totalIndividualsTestedtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Individuals Tested :"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsmedium"
+            android:layout_below="@id/totalSamplesTestedtxt"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/totalIndividualsTested"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Individuals Tested"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsmedium"
+            android:layout_below="@id/totalSamplesTestedtxt"
+            android:layout_toRightOf="@id/totalIndividualsTestedtxt"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/totalPositiveCasestxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Positive Cases :"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsmedium"
+            android:layout_below="@id/totalIndividualsTestedtxt"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/totalPositiveCases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Positive Cases"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsmedium"
+            android:layout_below="@id/totalIndividualsTestedtxt"
+            android:layout_toRightOf="@id/totalPositiveCasestxt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"/>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

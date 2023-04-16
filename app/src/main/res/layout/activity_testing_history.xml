@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestingHistoryActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:background="?selectableItemBackground"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+            <TextView
+                android:id="@+id/toptestingtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/worldwidestasticstxt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:padding="5dp"
+                android:text="Some top testing" />
+
+            <RelativeLayout
+                android:id="@+id/sometoptestingrelative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toptestingtxt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp">
+
+                <RelativeLayout
+                    android:id="@+id/firstrelative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/news_back">
+
+                    <ImageView
+                        android:id="@+id/testimg"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/testimg" />
+
+                    <TextView
+                        android:id="@+id/datetxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/testimg"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Date" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/datetxt"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="2021-07-23" />
+
+                    <TextView
+                        android:id="@+id/totalSamplesTestedtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/date"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Total Samples Tested" />
+
+                    <TextView
+                        android:id="@+id/totalSamplesTested"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/totalSamplesTestedtxt"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="452939545" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/secondrelative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/news_back">
+
+                    <ImageView
+                        android:id="@+id/testimg2"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/testimg" />
+
+                    <TextView
+                        android:id="@+id/datetxt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/testimg2"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Date" />
+
+                    <TextView
+                        android:id="@+id/date2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/datetxt2"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="2021-07-22" />
+
+                    <TextView
+                        android:id="@+id/totalSamplesTestedtxt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/date2"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Total Samples Tested" />
+
+                    <TextView
+                        android:id="@+id/totalSamplesTested2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/totalSamplesTestedtxt2"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="450911712" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/thirdrelative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/firstrelative"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/news_back">
+
+                    <ImageView
+                        android:id="@+id/testimg3"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/testimg" />
+
+                    <TextView
+                        android:id="@+id/datetxt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/testimg3"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Date" />
+
+                    <TextView
+                        android:id="@+id/date3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/datetxt3"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="2021-07-21" />
+
+                    <TextView
+                        android:id="@+id/totalSamplesTestedtxt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/date3"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Total Samples Tested" />
+
+                    <TextView
+                        android:id="@+id/totalSamplesTested3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/totalSamplesTestedtxt3"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="449193273" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/forthrelative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/firstrelative"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/news_back">
+
+                    <ImageView
+                        android:id="@+id/testimg4"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/testimg" />
+
+                    <TextView
+                        android:id="@+id/datetxt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/testimg4"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Date" />
+
+                    <TextView
+                        android:id="@+id/date4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/datetxt4"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="2021-07-20" />
+
+                    <TextView
+                        android:id="@+id/totalSamplesTestedtxt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/date4"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Total Samples Tested" />
+
+                    <TextView
+                        android:id="@+id/totalSamplesTested4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/totalSamplesTestedtxt4"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="447341133" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/alltesting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sometoptestingrelative"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/alltesthistory">
+
+                <TextView
+                    android:id="@+id/alltestingtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="All Testings"
+                    android:layout_marginTop="3dp"
+                    android:padding="5dp"
+                    android:textColor="@color/white" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/testinghistorylist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/alltestingtxt"
+                    tools:listitem="@layout/testing_history"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.degtu.cowid_19casesdata">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.Reciever" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/covidiconn"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="true">
+        <activity
+            android:name=".PredictCovidActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".HelplineNumberActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DetailStateCasesActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ContactUsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PrivacyPolicyActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SettingActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PrecautionsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".TestingHistoryActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".VaccineAskActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SavedNewsActivity"
+            android:parentActivityName=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DetailNewsActivity"
+            android:parentActivityName=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NewsActivity"
+            android:parentActivityName=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DetailCountryCase2Activity"
+            android:parentActivityName=".ShowCountryActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NameActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".OTPActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PhoneNumberActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Scratch2Activity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Scratch1Activity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ScratchActivity"
+            android:exported="true"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ShowIndiaStateActivity"
+            android:parentActivityName=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CovidPreventionActivity"
+            android:parentActivityName=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ShowCountryActivity"
+            android:parentActivityName=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7275806532675227~6734009019" />
+    </application>
+
+</manifest>

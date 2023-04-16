@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScratchActivity"
+    android:background="@color/white">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imagescratch"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/healthimg" />
+
+    <TextView
+        android:id="@+id/textcovidtracker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagescratch"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Welcome to Covid Tracker"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/longtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textcovidtracker"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Here,You will get data about covid situations."
+        android:textColor="#8A000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/longt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/longtext"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Don't get panic in covid, just take precautions."
+        android:textColor="#8A000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/thirdtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/longt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="You will have a list of precautions provided by us."
+        android:textColor="#8A000000"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thirdtext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:padding="20dp"
+        android:text="Let's Get Started        >"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

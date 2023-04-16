@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "78955844186",
+    "project_id": "cowid-19-cases-data",
+    "storage_bucket": "cowid-19-cases-data.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78955844186:android:9c4e9f91439dbbd7197e63",
+        "android_client_info": {
+          "package_name": "com.degtu.cowid_19casesdata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78955844186-jffuuduj623fkqu6q8tpibscnjo4si4q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsrq8EUSLkuDrsrgOnW_qSbzrBHrSCUWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78955844186-jffuuduj623fkqu6q8tpibscnjo4si4q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

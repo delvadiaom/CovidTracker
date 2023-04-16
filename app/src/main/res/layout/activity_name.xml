@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneNumberActivity"
+    android:background="@color/white">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imagescratch"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/profileimg" />
+
+    <TextView
+        android:id="@+id/tellusyourname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagescratch"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Tell us your good name"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tellusyourname"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="What's your name?"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/textphone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/edittextback"
+        android:fontFamily="@font/poppinsmedium"
+        android:hint="Username"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/continuebtn"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:padding="20dp"
+        android:text="Continue"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

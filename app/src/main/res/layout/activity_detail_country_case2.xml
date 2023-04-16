@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailCountryCase2Activity"
+    android:background="@color/grey">
+
+    <RelativeLayout
+        android:id="@+id/toolrelative"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <TextView
+            android:id="@+id/countryname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Countryname"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="?selectableItemBackground"
+            android:src="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolrelative">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/frelative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                android:elevation="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/todayreport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Today's Report"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Date"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/caserelative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp">
+
+                <View
+                    android:id="@+id/vmyfav"
+                    android:layout_width="3dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/myfav" />
+
+                <TextView
+                    android:id="@+id/smallconfirmed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-4dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Confirmed"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/smallconfirmednumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/smallconfirmed"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="comfirmednumber" />
+
+                <View
+                    android:id="@+id/vmyfav2"
+                    android:layout_width="3dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/smallconfirmednumber"
+                    android:layout_marginTop="32dp"
+                    android:background="@color/green" />
+
+                <TextView
+                    android:id="@+id/smallrecovered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/smallconfirmednumber"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="26dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Recovered"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/smallrecoverednumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/smallrecovered"
+                    android:layout_marginLeft="10dp"
+                    android:text="recoverednumber"
+                    android:fontFamily="@font/poppinsmedium"/>
+
+                <View
+                    android:id="@+id/vmyfav3"
+                    android:layout_width="3dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/smallrecoverednumber"
+                    android:layout_marginTop="32dp"
+                    android:background="@color/orange" />
+
+                <TextView
+                    android:id="@+id/smallactive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/smallrecoverednumber"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="26dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Active"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/smallactivenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/smallactive"
+                    android:layout_marginLeft="10dp"
+                    android:text="activenumber"
+                    android:fontFamily="@font/poppinsmedium"/>
+
+                <org.eazegraph.lib.charts.PieChart xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/piechart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_toRightOf="@id/smallconfirmednumber"
+                    android:layout_marginTop="10dp"
+                    android:padding="8dp"
+                    app:egLegendTextSize="18sp"
+                    app:egUsePieRotation="true"
+                    app:egValueTextSize="36sp" />
+
+
+            </RelativeLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:columnCount="2">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="170dp"
+                    android:layout_columnWeight="1"
+                    app:strokeWidth="1dp"
+                    android:padding="12dp"
+                    android:layout_gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/caseback"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:id="@+id/deathimg"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/deathdot" />
+
+                        <TextView
+                            android:id="@+id/deathtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/deathimg"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Deaths" />
+
+                        <TextView
+                            android:id="@+id/deathnumbers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/deathtext"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="deathnumber"
+                            android:textSize="17sp" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="170dp"
+                    android:layout_columnWeight="1"
+                    app:strokeWidth="1dp"
+                    android:padding="12dp"
+                    android:layout_gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/caseback"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:id="@+id/testimg"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/greydot" />
+
+                        <TextView
+                            android:id="@+id/testtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/testimg"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Tests" />
+
+                        <TextView
+                            android:id="@+id/testnumbers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/testtext"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="testnumbers"
+                            android:textSize="17sp" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="170dp"
+                    android:layout_columnWeight="1"
+                    app:strokeWidth="1dp"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/caseback"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:id="@+id/criticalimg"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/lightbluedot" />
+
+                        <TextView
+                            android:id="@+id/criticaltext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/criticalimg"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Critical" />
+
+                        <TextView
+                            android:id="@+id/criticalnumbers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/criticaltext"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="criticalnum"
+                            android:textSize="17sp" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="170dp"
+                    android:layout_columnWeight="1"
+                    app:strokeWidth="1dp"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/caseback"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:id="@+id/casepermillionimg"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/yellowdot" />
+
+                        <TextView
+                            android:id="@+id/casespermilliontext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/casepermillionimg"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Case " />
+
+                        <TextView
+                            android:id="@+id/casespermillion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/casespermilliontext"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="criticalnum"
+                            android:textSize="17sp" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="170dp"
+                    android:layout_columnWeight="1"
+                    app:strokeWidth="1dp"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/caseback"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:id="@+id/todaycasesimg"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/yellowdot" />
+
+                        <TextView
+                            android:id="@+id/todaycasestxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/todaycasesimg"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Today Cases" />
+
+                        <TextView
+                            android:id="@+id/todaycases"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/todaycasestxt"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="criticalnum"
+                            android:textSize="17sp" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="170dp"
+                    android:layout_columnWeight="1"
+                    app:strokeWidth="1dp"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/caseback"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:id="@+id/todaydeathimg"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/yellowdot" />
+
+                        <TextView
+                            android:id="@+id/todaydeathtxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/todaydeathimg"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Today Deaths" />
+
+                        <TextView
+                            android:id="@+id/todaydeath"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/todaydeathtxt"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="criticalnum"
+                            android:textSize="17sp" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="170dp"
+                    android:layout_columnWeight="1"
+                    app:strokeWidth="1dp"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/caseback"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:id="@+id/todayrecoveredimg"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/yellowdot" />
+
+                        <TextView
+                            android:id="@+id/todayrecoveredtxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/todayrecoveredimg"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Today Recovered"/>
+
+                        <TextView
+                            android:id="@+id/todayrecovered"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/todayrecoveredtxt"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="criticalnum"
+                            android:textSize="17sp" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="170dp"
+                    android:layout_columnWeight="1"
+                    app:strokeWidth="1dp"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/caseback"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:id="@+id/deathperonemillionimg"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/yellowdot" />
+
+                        <TextView
+                            android:id="@+id/deathperonemilliontxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/deathperonemillionimg"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Death Per Million"/>
+
+                        <TextView
+                            android:id="@+id/deathperonemillion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/deathperonemilliontxt"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="criticalnum"
+                            android:textSize="17sp" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="1000dp"
+    android:background="#BA000000">
+
+    <TextView
+        android:id="@+id/livetracker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Covid Live Tracker"
+        android:fontFamily="@font/rubikreg"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/changetheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Veccine Certificate"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/rubikreg"
+        android:layout_below="@id/livetracker"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/changetheme"
+        android:background="#70E3E3E3"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Privacy &amp; Terms"
+        android:background="?selectableItemBackground"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_below="@id/view"
+        android:layout_toEndOf="@id/privacyimg"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/rubikreg"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/privacyimg"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/privacy"
+        android:layout_below="@id/view"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="12dp"/>
+
+    <ImageView
+        android:id="@+id/settingsimg"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_baseline_settings_24"
+        android:layout_below="@id/privacy"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="9dp"/>
+
+
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:layout_toEndOf="@id/settingsimg"
+        android:background="?selectableItemBackground"
+        android:layout_below="@id/privacy"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/rubikreg"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/aboutusimg"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_below="@id/settings"
+        android:src="@drawable/aboutus"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="11dp"/>
+
+    <TextView
+        android:id="@+id/aboutus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:layout_toEndOf="@id/aboutusimg"
+        android:layout_below="@id/settings"
+        android:layout_marginTop="10dp"
+        android:background="?selectableItemBackground"
+        android:textColor="@color/white"
+        android:fontFamily="@font/rubikreg"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"/>
+
+
+    <ImageView
+        android:id="@+id/help"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_baseline_help_outline_24"
+        android:layout_below="@id/aboutus"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help &amp; Support"
+        android:background="?selectableItemBackground"
+        android:layout_below="@id/aboutus"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/help"
+        android:textColor="@color/white"
+        android:fontFamily="@font/rubikreg"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/logout"
+        android:layout_toEndOf="@id/textlogout"
+        android:layout_marginTop="610dp"/>
+
+    <TextView
+        android:id="@+id/textlogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:background="?selectableItemBackground"
+        android:textColor="@color/white"
+        android:fontFamily="@font/rubikreg"
+        android:layout_marginTop="600dp"
+        android:padding="10dp"
+        android:layout_marginLeft="160dp"/>
+
+
+
+</RelativeLayout>

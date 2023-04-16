@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/drawerlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#DEE1EC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hiusernametxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi Username"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="17sp"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/worldwidestasticstxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore covid statistics all over the world"
+            android:padding="5dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="@color/black"/>
+
+
+        <RelativeLayout
+            android:id="@+id/firstrelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/news_backcases">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/flagofindia"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/indiaflafsplash" />
+
+            <TextView
+                android:id="@+id/countrynamee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/flagofindia"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="CountryName"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/viewww"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_below="@id/flagofindia"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <RelativeLayout
+                android:id="@+id/smallrelative"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/viewww"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/news_backcasessss">
+
+                <TextView
+                    android:id="@+id/activetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="17dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Active"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/activecases"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activetxt"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Active"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/recoveredtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="17dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Recovered"
+                    android:textColor="@color/green"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/recoveredcases"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activetxt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Recovered"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/deathtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Deaths"
+                    android:textColor="@color/red"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/deaths"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activetxt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Deaths"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/smallrelative"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/graphh" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-7275806532675227/6542437320">
+
+            </com.google.android.gms.ads.AdView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/secondrelative"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/allcountrycases"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/exploreallcountries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="View All Countries!"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/smallexploreallcountries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/exploreallcountries"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="45dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Find out how many people have been infected in the world"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/world" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/rightarrow" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/thirdrelative"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/alltestinghostory"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/viewtestinghistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Covid Tests"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/smalltestinghistorytxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewtestinghistory"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="45dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="See how much covid tests have been done on different dates in india"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/covidtesting" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/forthrelative"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/allhospitalandbeds"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/viewhospitalbeds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Helpline Numbers"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/smallhospitalbedstxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewhospitalbeds"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="45dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Check out helpline numbers of different states of the india."
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/helplinenumber" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/hospitalbedsbackimg" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </ScrollView>

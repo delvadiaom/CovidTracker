@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/news_back">
+
+        <TextView
+            android:id="@+id/loc"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/newsimg"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Location"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/contactnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@id/newsimg"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Contact Number"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

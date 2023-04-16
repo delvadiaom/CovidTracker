@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VaccineAskActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/toprelative"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:elevation="20dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="?selectableItemBackground"
+            android:src="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/rubikreg"
+            android:text="Settings"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toprelative">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/asking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toprelative"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/rubikreg"
+                    android:padding="10dp"
+                    android:text="Have you taken your both vaccine?"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/asking"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/buttonbacknews"
+                    android:fontFamily="@font/rubikreg"
+                    android:text="Yes"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/yes"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/buttonbacknews"
+                    android:fontFamily="@font/rubikreg"
+                    android:text="No"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/firstcertificatetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/rubikreg"
+                    android:padding="10dp"
+                    android:text="Upload your vaccine certificate"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/firstcertificateimg"
+                    android:layout_width="300dp"
+                    android:layout_height="350dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/card_back_country_vaccine"
+                    android:elevation="5dp"
+                    android:src="@drawable/certificate" />
+
+                <Button
+                    android:id="@+id/upload"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Upload"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/rubikreg"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/buttonback"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:layout_height="140dp"
+    android:background="@drawable/card_back_country_vaccine"
+    android:layout_margin="2dp">
+
+    <ImageView
+        android:id="@+id/increase"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/increase"
+        android:layout_marginLeft="15dp"/>
+
+
+    <TextView
+                android:id="@+id/countryname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="countryname"
+                android:layout_below="@id/increase"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="17sp"
+                android:fontFamily="@font/rubikreg"/>
+
+            <TextView
+                android:id="@+id/percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="percentage"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/rubikreg"
+                android:layout_below="@id/countryname"/>
+
+
+</RelativeLayout>

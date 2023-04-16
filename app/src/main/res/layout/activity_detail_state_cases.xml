@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailStateCasesActivity"
+    android:background="@color/grey">
+
+    <RelativeLayout
+        android:id="@+id/toolrelative"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <TextView
+            android:id="@+id/toolstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/rubikreg"
+            android:text="Statename"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="?selectableItemBackground"
+            android:src="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolrelative">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/frelative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                android:elevation="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/todayreport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today's Report"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/rubikreg"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/rubikreg"
+                    android:text="Date"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/caserelative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp">
+
+                <View
+                    android:id="@+id/vmyfav"
+                    android:layout_width="3dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/myfav" />
+
+                <TextView
+                    android:id="@+id/confirmed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/rubikreg"
+                    android:text="Confirmed"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/smallconfirmednumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/confirmed"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="comfirmednumber" />
+
+                <View
+                    android:id="@+id/vmyfav2"
+                    android:layout_width="3dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/smallconfirmednumber"
+                    android:layout_marginTop="32dp"
+                    android:background="@color/green" />
+
+                <TextView
+                    android:id="@+id/recovered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recovered"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@id/smallconfirmednumber"
+                    android:fontFamily="@font/rubikreg"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/smallrecoverednumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/recovered"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="recoverednumber" />
+
+                <View
+                    android:id="@+id/vmyfav3"
+                    android:layout_width="3dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/smallrecoverednumber"
+                    android:layout_marginTop="32dp"
+                    android:background="@color/orange" />
+
+                <TextView
+                    android:id="@+id/active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/smallrecoverednumber"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/rubikreg"
+                    android:text="Active"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/smallactivenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/active"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="activenumber" />
+
+                <org.eazegraph.lib.charts.PieChart xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/piechart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/smallconfirmednumber"
+                    android:padding="8dp"
+                    app:egLegendTextSize="18sp"
+                    app:egUsePieRotation="true"
+                    app:egValueTextSize="36sp" />
+
+
+            </RelativeLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:columnCount="2">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="170dp"
+                    android:layout_columnWeight="1"
+                    app:strokeWidth="1dp"
+                    android:padding="12dp"
+                    android:layout_gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/caseback"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:id="@+id/deathdot"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/deathdot" />
+
+                        <TextView
+                            android:id="@+id/death"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/deathdot"
+                            android:fontFamily="@font/rubikreg"
+                            android:text="Deaths" />
+
+                        <TextView
+                            android:id="@+id/deaths"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/death"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/rubikreg"
+                            android:text="deathnumber"
+                            android:textSize="17sp" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="170dp"
+                    android:layout_columnWeight="1"
+                    app:strokeWidth="1dp"
+                    android:padding="12dp"
+                    android:layout_gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/caseback"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:id="@+id/testimg"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/greydot" />
+
+                        <TextView
+                            android:id="@+id/deltaconfirmtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/testimg"
+                            android:fontFamily="@font/rubikreg"
+                            android:text="Delta Confirmed" />
+
+                        <TextView
+                            android:id="@+id/deltaconfirmed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/deltaconfirmtext"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/rubikreg"
+                            android:text="testnumbers"
+                            android:textSize="17sp" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="170dp"
+                    android:layout_columnWeight="1"
+                    app:strokeWidth="1dp"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/caseback"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:id="@+id/criticalimg"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/lightbluedot" />
+
+                        <TextView
+                            android:id="@+id/deltadeathtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/criticalimg"
+                            android:fontFamily="@font/rubikreg"
+                            android:text="Delta Deaths" />
+
+                        <TextView
+                            android:id="@+id/deltadeaths"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/deltadeathtext"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/rubikreg"
+                            android:text="criticalnum"
+                            android:textSize="17sp" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="170dp"
+                    android:layout_columnWeight="1"
+                    app:strokeWidth="1dp"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/caseback"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:id="@+id/casepermillionimg"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/yellowdot" />
+
+                        <TextView
+                            android:id="@+id/deltarecoveredtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/casepermillionimg"
+                            android:fontFamily="@font/rubikreg"
+                            android:text="Delta Recovered" />
+
+                        <TextView
+                            android:id="@+id/deltarecovered"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/deltarecoveredtext"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/rubikreg"
+                            android:text="criticalnum"
+                            android:textSize="17sp" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="170dp"
+                    android:layout_columnWeight="1"
+                    app:strokeWidth="1dp"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/caseback"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:id="@+id/migratedimg"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/yellowdot" />
+
+                        <TextView
+                            android:id="@+id/migratedtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/migratedimg"
+                            android:fontFamily="@font/rubikreg"
+                            android:text="Migrated" />
+
+                        <TextView
+                            android:id="@+id/migrated"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/migratedtext"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/rubikreg"
+                            android:text="criticalnum"
+                            android:textSize="17sp" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </GridLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

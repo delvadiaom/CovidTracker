@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Scratch1Activity">
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="?selectableItemBackground"
+        android:fontFamily="@font/rubikreg"
+        android:padding="10dp"
+        android:text="SKIP" />
+
+    <TextView
+        android:id="@+id/firsttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/rubikreg"
+        android:text="easy"
+        android:textColor="@color/black"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/longtext"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firsttext"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/rubikreg"
+        android:text="covered relavent information about covid 19 pendemic situations.You will get all precautions how you can save yourself from covid."
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/continuebtn"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/rubikreg"
+        android:padding="20dp"
+        android:text="Continue"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
