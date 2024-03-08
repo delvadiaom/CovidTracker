@@ -13,3 +13,4 @@ User-friendly design and customization options to personalize your experience
 Here are some screenshots of app
 </br>
 ![Screenshot (286)](https://github.com/delvadiaom/CovidTracker/assets/102248079/a0b8d8f8-fb87-4975-b147-1673b10b4c13)
+https://github.com/delvadiaom/CovidTracker/blob/main/Screenshot%20(286).png
