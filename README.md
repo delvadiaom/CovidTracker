@@ -14,4 +14,5 @@ Here are some screenshots of app
 </br>
 
 ![Screenshot (286)](https://github.com/delvadiaom/CovidTracker/assets/102248079/8fd71289-81e3-41dd-af63-d0384ec1db4b)
-![o0SX0MOtEebI_1440_2880](https://github.com/delvadiaom/CovidTracker/assets/102248079/d15cded7-e1ec-4ea4-a194-65627858b5d2)
+![Screenshot (287)](https://github.com/delvadiaom/CovidTracker/assets/102248079/3e43361c-3464-4935-8173-b3453d7723e7)
+
